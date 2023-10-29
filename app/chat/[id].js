@@ -13,17 +13,17 @@ const Detail = () => {
   const windowHeight = Dimensions.get('window').height;
   const [dummyChatSpecial, setdummyChatSpecial] = useState([
     {
-      message: 'Assalamualaikum',
+      message: 'Haloo',
       sender: true
     },
   ])
   const [dummyChat, setdummyChat] = useState([
     {
-      message: 'p',
+      message: 'woyyy',
       sender: true
     },
     {
-      message: 'ngops ?',
+      message: 'nongkrong?',
       sender: true
     },
   ])
@@ -73,7 +73,7 @@ const Detail = () => {
           </View>
 
           <View>
-            <Text className='text-xl text-white font-semibold'>{id === '0' ? 'Quran ♡' : `Teman ${id}`}</Text>
+            <Text className='text-xl text-white font-semibold'>{id === '0' ? 'Yoripe ♡' : `Teman ${id}`}</Text>
           </View>
         </View>
 

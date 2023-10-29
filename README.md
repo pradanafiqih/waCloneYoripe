@@ -16,14 +16,9 @@ Make sure you have the following installed on your machine:
 
 ### 🚀 Installation
 
-1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/zayyid123/WhatsApp_Clone-mobile.git
-   cd WhatsApp_Clone-mobile
-   ```
 
-2. Install Dependency:
+1. Install Dependency:
 
    ```bash
    npm install

@@ -66,7 +66,7 @@ const ModalStatus = ({ modalVisible, setModalVisible }) => {
             </View>
 
             <View>
-              <Text className='text-xl text-white font-semibold'>Quran ♡</Text>
+              <Text className='text-xl text-white font-semibold'>Yoripe ♡</Text>
               <Text className='text-[#A0ABAD]'>11 menit yang lalu</Text>
             </View>
           </View>

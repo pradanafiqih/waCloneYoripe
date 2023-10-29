@@ -81,7 +81,7 @@ const PembaruanScreen = () => {
           <View
             className='ml-3'
           >
-            <Text className='font-bold text-base'>Quran ♡</Text>
+            <Text className='font-bold text-base'>Yoripe ♡</Text>
             <Text className='text-[#A0ABAD]'>11 menit yang lalu</Text>
           </View>
         </TouchableOpacity>

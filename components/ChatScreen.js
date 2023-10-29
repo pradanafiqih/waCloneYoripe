@@ -1,12 +1,35 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
-import React from 'react'
+import React,{ useEffect, useState } from 'react'
 import { ScrollView } from 'react-native'
 import { router } from 'expo-router';
 
 // icon
 import { UserIcon } from 'react-native-heroicons/outline'
+import axios from 'axios';
+
 
 const ChatScreen = () => {
+
+  const [chatData, setChatData] = useState([]); // State to hold chat data
+
+  useEffect(() => {
+    // Define the API URL
+    const apiUrl = "https://private-f5b45c-chatwa.apiary-mock.com/chat";
+
+    // Fetch data from the API using Axios
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        // Handle successful response
+        
+        setChatData(response.data.data); // Update chatData state with the fetched data
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // Handle error
+        console.error("Error fetching data: ", error);
+      });
+  }, []);
   return (
     <View>
       <ScrollView
@@ -48,13 +71,13 @@ const ChatScreen = () => {
                     {
                       index === 0 ?
                       <View>
-                        <Text className='font-semibold text-lg'>Quran ♡</Text>
-                        <Text className='text-[#98A0A3]'>Assalamualaikum</Text>
+                        <Text className='font-semibold text-lg'>Yoripe ♡</Text>
+                        <Text className='text-[#98A0A3]'>Haloo</Text>
                       </View>
                       :
                       <View>
                         <Text className='font-semibold text-lg'>Teman {index}</Text>
-                        <Text className='text-[#98A0A3]'>Ngops ?</Text>
+                        <Text className='text-[#98A0A3]'>nongkrong?</Text>
                       </View>
                     }
                   </View>

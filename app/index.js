@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ScrollView, TouchableOpacity } from 'react-native'
 import { Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
@@ -19,6 +19,7 @@ import PembaruanScreen from '../components/PembaruanScreen';
 import PanggilanScreen from '../components/PanggilanScreen';
 
 const App = () => {
+  
   return (
     <View
       style={{ flex: 1 }}
